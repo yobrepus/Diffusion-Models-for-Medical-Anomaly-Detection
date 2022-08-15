@@ -95,6 +95,15 @@ def main():
         )
         print('dataset is chexpert')
 
+    elif args.dataset == 'rsnachest':
+        data = load_data(
+            data_dir=args.data_dir,
+            batch_size=1,
+            image_size=args.image_size,
+            class_cond=True,
+        )
+        print('dataset is rsnachest')
+
 
 
     logger.log(f"creating optimizer...")
